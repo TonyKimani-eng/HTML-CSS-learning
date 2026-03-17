@@ -1,4 +1,4 @@
-# My First Website
+# website using HTML and CSS
 
 This is my first HTML and CSS practice project.
 
