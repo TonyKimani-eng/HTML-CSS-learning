@@ -36,6 +36,7 @@
         margin-right: 30px;
         padding-left: 20px;
         padding-right: 20px;
+        transition: margin-right 0.15s;
     }
     .sell-button {
         color: white;
@@ -48,7 +49,30 @@
         margin-right: 30px;
         padding-left: 20px;
         padding-right: 20px;
+        transition: margin-right 0.2s;
+
     }
+
+    .buy-button:hover {
+            box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+    .sell-button:hover {
+            box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+
+        }
+    .buy-button:active {
+        opacity: 0.8;
+        margin-bottom: 6px;
+        margin-right: 5px;
+    }   
+    .sell-button:active {
+        opacity: 0.8;
+        margin-bottom: 6px;
+        margin-right: 10px;
+    }
+
 </style>
 
 <p class="usd-price">
