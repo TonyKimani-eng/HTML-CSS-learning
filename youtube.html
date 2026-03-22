@@ -25,14 +25,15 @@
       }
 
       .bottom-block {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
         text-align: left;
       }
 
       .profile1 {
         width: 40px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 12px;
+        flex-shrink: 0;
       }
 
       .picture1 {
@@ -42,9 +43,7 @@
       }
 
       .description {
-        width: 248px;
-        display: inline-block;
-        vertical-align: top;
+        flex: 1;
       }
 
       .video-title {
