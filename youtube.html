@@ -5,60 +5,83 @@
     <style>
       body {
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
       }
 
       .searchbox {
         color: rgb(14, 13, 13);
         font-size: 20px;
-        margin: 20px 0;
+        margin: 0 0 30px;
         display: block;
+        padding: 10px 14px;
+        width: 320px;
+        border: 1px solid #cfcfcf;
+        border-radius: 8px;
       }
 
-      .video1-preview {
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 340px);
+        gap: 24px;
+      }
+
+      .video-preview {
         width: 340px;
+        background-color: white;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
 
       .thumbnail {
-        width: 300px;
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
         display: block;
         margin-bottom: 12px;
+        border-radius: 12px;
       }
 
       .bottom-block {
         text-align: left;
       }
 
-      .profile1,
+      .profile,
       .description {
         display: inline-block;
         vertical-align: top;
       }
 
-      .profile1 {
-        width: 40px;
+      .profile {
+        width: 48px;
         margin-right: 12px;
       }
 
-      .picture1 {
-        border-radius: 40px;
+      .picture {
+        border-radius: 24px;
         width: 100%;
+        height: 48px;
+        object-fit: cover;
         display: block;
       }
 
       .description {
-        width: 248px;
+        width: 270px;
       }
 
       .video-title {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
-        margin: 0 0 4px;
+        margin: 0 0 6px;
+        line-height: 1.3;
       }
 
       .video-author,
       .video-stats {
         font-size: 14px;
-        color: rgb(14, 13, 13);
+        color: rgb(96, 96, 96);
         margin: 0 0 4px;
       }
     </style>
@@ -66,26 +89,112 @@
   <body>
     <input type="text" placeholder="Search" class="searchbox">
 
-    <div class="video1-preview">
-      <div>
-        <img src="img file/thumbnail-1.webp" class="thumbnail">
-      </div>
-
-      <div class="bottom-block">
-        <div class="profile1">
-          <img class="picture1" src="img file/channel-1.jpeg">
+    <div class="video-grid">
+      <div class="video-preview">
+        <div>
+          <img src="img folder/channel-1.jpeg" class="thumbnail">
         </div>
 
-        <div class="description">
-          <p class="video-title">
-            Talking Tech and AI with google CEO sunder Pichai!
-          </p>
-          <p class="video-author">
-            Marques Brownlee
-          </p>
-          <p class="video-stats">
-            3.4M views · 6 months ago
-          </p>
+        <div class="bottom-block">
+          <div class="profile">
+            <img class="picture" src="img folder/channel-1.jpeg">
+          </div>
+
+          <div class="description">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div>
+          <img src="img folder/channel-2.jpeg" class="thumbnail">
+        </div>
+
+        <div class="bottom-block">
+          <div class="profile">
+            <img class="picture" src="img folder/channel-2.jpeg">
+          </div>
+
+          <div class="description">
+            <p class="video-title">Try Not To Laugh Challenge with the Funniest Clips Online</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div>
+          <img src="img folder/channel-3.jpeg" class="thumbnail">
+        </div>
+
+        <div class="bottom-block">
+          <div class="profile">
+            <img class="picture" src="img folder/channel-3.jpeg">
+          </div>
+
+          <div class="description">
+            <p class="video-title">Inside the Biggest Tech Setup for Everyday Productivity</p>
+            <p class="video-author">Tech Vision</p>
+            <p class="video-stats">2.1M views · 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div>
+          <img src="img folder/channel-4.jpeg" class="thumbnail">
+        </div>
+
+        <div class="bottom-block">
+          <div class="profile">
+            <img class="picture" src="img folder/channel-4.jpeg">
+          </div>
+
+          <div class="description">
+            <p class="video-title">Learn HTML and CSS by Building a Clean YouTube Layout</p>
+            <p class="video-author">Code Mastery</p>
+            <p class="video-stats">875K views · 8 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div>
+          <img src="img folder/channel-5.jpeg" class="thumbnail">
+        </div>
+
+        <div class="bottom-block">
+          <div class="profile">
+            <img class="picture" src="img folder/channel-5.jpeg">
+          </div>
+
+          <div class="description">
+            <p class="video-title">Morning Routine Tips for Staying Focused and Creative</p>
+            <p class="video-author">Daily Habits</p>
+            <p class="video-stats">640K views · 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div>
+          <img src="img folder/channel-6.jpeg" class="thumbnail">
+        </div>
+
+        <div class="bottom-block">
+          <div class="profile">
+            <img class="picture" src="img folder/channel-6.jpeg">
+          </div>
+
+          <div class="description">
+            <p class="video-title">Best Camera Tricks for Shooting Better Videos at Home</p>
+            <p class="video-author">Creator Studio</p>
+            <p class="video-stats">1.9M views · 10 months ago</p>
+          </div>
         </div>
       </div>
     </div>
