@@ -1,118 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
-        
-        div {
-            padding: 0px;
-            margin: 10px 0;
-            
-            border: 1px solid #ccc;
-        }
-        .account-div {
-            width:200px;
-        }
-        .profpic-div{
-            width: 150px;
-            padding: 0px;
-            margin-bottom: 0px;
-        }
-        .account-name{
-            margin-left: 5px;
-            padding-top: 0px;
-            margin-top: 5px;
-            margin-bottom: 0px;
-        }
-        .prof-pic{
-            width: 150px;
-        }
-        .smalldog-pic{
-            width: 30px;
-            height: 30px;
-            border-radius: 16px;
-            margin: 0px;
-            margin-left: 5px;
-        
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
-        }
-        .mutual-text{
-            font-size: 10px;
-            
-        }
-        .small-image {
-            display: inline-block;
-            vertical-align:top;
+    body {
+      padding: 20px;
+    }
 
-        }
-        .mutual-friends{
-            margin-top: 20px;
-            margin: 0px;
-            padding: 0px;
-            margin-top: 1px;
-        }
-        .mutual-div{
-            display: inline-block;
-            vertical-align:top;
-            
+    .account-div {
+      width: 200px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+    }
 
-        }
-        .name-text{
-            margin: 0px;
-            padding: 0px;
-        }
-        .button-div{
-            margin-top: 0px;
-        }
-        .add-button{
-            color: white;
-            background-color: rgb(52, 113, 217);
-            width: 90px;
-            border-radius: 2px;
-            border: none;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            margin-left: 5px;
-            margin-top: 0px;
+    .profpic-div {
+      margin-bottom: 12px;
+    }
 
-        }
-    </style>
+    .prof-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .account-name {
+      margin-left: 8px;
+      margin-bottom: 5px;
+    }
+
+    .name-text {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .mutual-friends {
+      margin-left: 8px;
+      margin-bottom: 10px;
+    }
+
+    .small-image {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .smalldog-pic {
+      width: 28px;
+      height: 28px;
+      object-fit: cover;
+      border-radius: 14px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+
+    .mutual-div {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .mutual-text {
+      color: rgb(100, 100, 100);
+      font-size: 14px;
+    }
+
+    .button-div {
+      margin-left: 8px;
+      margin-bottom: 10px;
+    }
+
+    .add-button {
+      background-color: rgb(24, 119, 242);
+      color: white;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div class="account-div">
-     <div class="profpic-div">   
-        <img class="prof-pic" src="img folder/cat.jpg">
+  <div class="account-div">
+    <div class="profpic-div">
+      <img class="prof-pic" src="img folder/cat.jpg">
     </div>
+
     <div class="account-name">
-        <p class="name-text">
-            Oliver
-            
-        </p>
+      <p class="name-text">Oliver</p>
     </div>
+
     <div class="mutual-friends">
-        
-        
-        <div class="small-image">
-            <img class="smalldog-pic"   src="img folder/dog2.jpg">
-        </div>
-        <div class="mutual-div">
-            <p class="mutual-text">
-            2 mutual friends
-            </p>
-        </div>
+      <div class="small-image">
+        <img class="smalldog-pic" src="img folder/dog2.jpg">
+      </div>
+      <div class="mutual-div">
+        <p class="mutual-text">2 mutual friends</p>
+      </div>
     </div>
+
     <div class="button-div">
-        <button class="add-button">
-            Add Friend
-        </button>
+      <button class="add-button">Add Friend</button>
     </div>
-    </div>
+  </div>
 </body>
 </html>
